@@ -4,7 +4,7 @@
 # using table 8.4, p. 473
 # factor analysis of stock data using ML method
 
-setwd("~/_statistics/Wichern_data/")
+setwd("~/applied_multivariate_statistical_analysis/Wichern_data/")
 dat <- read.table("T8-4.DAT")
 names(dat) <- c("jpm","citibank","wf","rdc","exxon")
 
@@ -19,6 +19,10 @@ abline(h=0,v=0)
 # Uniquenesses = specific variances
 # Loadings are rotated
 # Test: hypothesis that n factors are sufficient.
+
+# extract loadings and specific variances
+stock_fa$loadings
+stock_fa$uniquenesses
 
 # example 9.14, 9.520
 # factor analysis of chicken-bone data
